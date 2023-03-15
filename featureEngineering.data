@@ -1,0 +1,121 @@
+articles = spark.createDataFrame([
+    ('''
+        The Andromeda Galaxy, named after the mythological 
+        Princess Andromeda, also known as Messier 31, M31, 
+        or NGC 224, is a spiral galaxy approximately 780 
+        kiloparsecs (2.5 million light-years) from Earth, 
+        and the nearest major galaxy to the Milky Way. 
+        Its name stems from the area of the sky in which it 
+        appears, the constellation of Andromeda. The 2006 
+        observations by the Spitzer Space Telescope revealed 
+        that the Andromeda Galaxy contains approximately one 
+        trillion stars, more than twice the number of the 
+        Milky Way’s estimated 200-400 billion stars. The 
+        Andromeda Galaxy, spanning approximately 220,000 light 
+        years, is the largest galaxy in our Local Group, 
+        which is also home to the Triangulum Galaxy and 
+        other minor galaxies. The Andromeda Galaxy's mass is 
+        estimated to be around 1.76 times that of the Milky 
+        Way Galaxy (~0.8-1.5×1012 solar masses vs the Milky 
+        Way's 8.5×1011 solar masses).
+    ''','Galaxy', 'Andromeda')
+    , ('''
+        The Milky Way is the galaxy that contains our Solar 
+        System. The descriptive "milky" is derived from the 
+        appearance from Earth of the galaxy – a band of light 
+        seen in the night sky formed from stars that cannot be 
+        individually distinguished by the naked eye. The term 
+        Milky Way is a translation of the Latin via lactea, from 
+        the Greek. From Earth, the Milky Way appears as a band 
+        because its disk-shaped structure is viewed from within. 
+        Galileo Galilei first resolved the band of light into 
+        individual stars with his telescope in 1610. Observations 
+        by Edwin Hubble showed that the Milky 
+        Way is just one of many galaxies.
+    ''','Galaxy','Milky Way')
+    , ('''
+        Australia, officially the Commonwealth of Australia, 
+        is a sovereign country comprising the mainland of the 
+        Australian continent, the island of Tasmania and numerous 
+        smaller islands. It is the largest country in Oceania and 
+        the world's sixth-largest country by total area. The 
+        neighbouring countries are Papua New Guinea, Indonesia and 
+        East Timor to the north; the Solomon Islands and Vanuatu to 
+        the north-east; and New Zealand to the south-east. Australia's 
+        capital is Canberra, and its largest city is Sydney.
+    ''','Geography', 'Australia')
+    , ('''
+        The United States of America (USA), commonly known as the United 
+        States (U.S.) or America, is a federal republic composed of 50 
+        states, a federal district, five major self-governing territories, 
+        and various possessions. At 3.8 million square miles (9.8 million 
+        km2) and with over 325 million people, the United States is the 
+        world's third- or fourth-largest country by total area and the 
+        third-most populous country. The capital is Washington, D.C., and 
+        the largest city by population is New York City. Forty-eight states 
+        and the capital's federal district are contiguous and in North America 
+        between Canada and Mexico. The State of Alaska is in the northwest 
+        corner of North America, bordered by Canada to the east and across 
+        the Bering Strait from Russia to the west. The State of Hawaii is 
+        an archipelago in the mid-Pacific Ocean. The U.S. territories are 
+        scattered about the Pacific Ocean and the Caribbean Sea, stretching 
+        across nine official time zones. The extremely diverse geography, 
+        climate, and wildlife of the United States make it one of the world's 
+        17 megadiverse countries.
+    ''','Geography', 'USA')
+    , ('''
+        China, officially the People's Republic of China (PRC), is a unitary 
+        sovereign state in East Asia and, with a population of around 1.404 
+        billion, the world's most populous country. Covering 9,600,000 
+        square kilometers (3,700,000 sq mi), China has the most borders of 
+        any country in the world. Governed by the Communist Party of China, 
+        it exercises jurisdiction over 22 provinces, five autonomous regions, 
+        four direct-controlled municipalities (Beijing, Tianjin, Shanghai, and 
+        Chongqing), and the special administrative regions of Hong Kong and Macau.
+    ''','Geography', 'China')
+    , ('''
+        Poland, officially the Republic of Poland, is a country located in 
+        Central Europe. It is divided into 16 administrative subdivisions, 
+        covering an area of 312,679 square kilometres (120,726 sq mi), and has 
+        a largely temperate seasonal climate. With a population of approximately 
+        38.5 million people, Poland is the sixth most populous member state of 
+        the European Union. Poland's capital and largest metropolis is 
+        Warsaw.
+    ''','Geography', 'Poland')
+    , ('''
+        The domestic dog (Canis lupus familiaris when considered a subspecies 
+        of the gray wolf or Canis familiaris when considered a distinct species) 
+        is a member of the genus Canis (canines), which forms part of the 
+        wolf-like canids, and is the most widely abundant terrestrial carnivore.
+        The dog and the extant gray wolf are sister taxa as modern wolves are 
+        not closely related to the wolves that were first domesticated, which 
+        implies that the direct ancestor of the dog is extinct. The dog was 
+        the first species to be domesticated and has been selectively bred over 
+        millennia for various behaviors, sensory capabilities, and physical attributes.
+    ''','Animal', 'Dog')
+    , ('''
+        The origin of the domestic dog is not clear. It is known that the dog was 
+        the first domesticated species. The domestic dog is a member of the genus 
+        Canis (canines), which forms part of the wolf-like canids, and is the most 
+        widely abundant terrestrial carnivore. The closest living relative of the 
+        dog is the gray wolf and there is no evidence of any other canine 
+        contributing to its genetic lineage. The dog and the extant gray wolf 
+        form two sister clades, with modern wolves not closely related to the 
+        wolves that were first domesticated. The archaeological record shows 
+        the first undisputed dog remains buried beside humans 14,700 years ago, 
+        with disputed remains occurring 36,000 years ago. These dates imply 
+        that the earliest dogs arose in the time of human hunter-gatherers 
+        and not agriculturists.
+    ''','Animal', 'Dog')
+    , ('''
+        Washington, officially the State of Washington, is a state in the Pacific 
+        Northwest region of the United States. Named after George Washington, 
+        the first president of the United States, the state was made out of the 
+        western part of the Washington Territory, which was ceded by Britain in 
+        1846 in accordance with the Oregon Treaty in the settlement of the 
+        Oregon boundary dispute. It was admitted to the Union as the 42nd state 
+        in 1889. Olympia is the state capital. Washington is sometimes referred 
+        to as Washington State, to distinguish it from Washington, D.C., the 
+        capital of the United States, which is often shortened to Washington.
+    ''','Geography', 'Washington State')    
+], ['articles', 'Topic', 'Object'])
